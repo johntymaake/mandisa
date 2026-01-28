@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Landing Page</title>
+    <meta name="description" content="Demo landing page showcasing a simple, fast, and clean website layout." />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #0f766e;
+            color: #fff;
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #0f766e;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: #0f766e;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 0.75rem;
+            color: #0f766e;
+        }
+
+        .contact {
+            background: #ecfdf5;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #0f766e;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-image: linear-gradient(rgba(15,118,110,0.85), rgba(15,118,110,0.85)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f'); background-size: cover; background-position: center;">
+        <h1>TVAKELE ENTERPRISE</h1>
+        <p>A 100% black female-owned consulting company aspiring to be a Centre of Excellence in the services we provide.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </header>
+
+    <section>
+        <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap;">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Team working" style="width:100%; max-width:400px; border-radius:10px;">
+            <div style="flex:1;">
+                <div class="section-title" style="text-align:left;">
+                    <h2>About Us</h2>
+        </div>
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            TVAKELE ENTERPRISE was registered in 2013 and began operations in October 2023. The company currently has two team members: a Director responsible for day-to-day operations and an administrative personnel. We provide professional consulting services tailored to meet our clients’ needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">
+            <h2>Services Offered</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="IT Consulting" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+                <h3>IT Consulting Services</h3>
+                <p>Professional IT consulting solutions designed to support and optimize business operations.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Administrative Support" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+                <h3>Administrative & Support Activities</h3>
+                <p>Reliable administrative and operational support to keep your business running smoothly.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Human Resources" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+                <h3>Human Resource Services</h3>
+                <p>Human resource solutions including recruitment and talent sourcing services.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Business Development" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+                <h3>Business Development</h3>
+                <p>Business development services with a focus on professional tender compilation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        <p>Email: mandisa@tvakele.co.za</p>
+        <p>Phone: 073 023 0491</p>
+    </section>
+
+    <footer>
+        <p>© 2026 TVAKELE ENTERPRISE (Pty) Ltd. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
